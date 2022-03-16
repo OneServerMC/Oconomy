@@ -1,0 +1,16 @@
+#########################################################
+# Oconomy Configuration File
+# Plugin version 0.1.0 (M1n1don)
+# - Main Site: https://www.one-server.jp/
+# - Discord: https://discord.gg/Qr7xSuyfyb
+##
+
+# prefix:
+#   このプラグインのシステムメッセージのプレフィックス
+#   DEFAULT: "&3Oconomy &f>>"
+prefix: "&3Oconomy &f>>"
+
+# currencyUnit:
+#   通貨の単位です。
+#   DEFAULT: "円"
+currencyUnit: "円"

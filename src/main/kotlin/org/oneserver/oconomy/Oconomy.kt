@@ -1,8 +1,9 @@
 package org.oneserver.oconomy
 
-import org.bukkit.plugin.java.JavaPlugin
+import hazae41.minecraft.kutils.bukkit.PluginConfigFile
+import hazae41.minecraft.kutils.bukkit.init
 
-class Oconomy : JavaPlugin()
+class Oconomy : AbstractOconomy()
 {
     companion object
     {
@@ -12,5 +13,14 @@ class Oconomy : JavaPlugin()
     override fun onEnable()
     {
         plugin = this
+
+        init(MainConfig)
+        MainConfig.autoSave = true
+    }
+
+    object MainConfig: PluginConfigFile("config")
+    {
+        var prefix by string("prefix")
+        var currencyUnit by string("currencyUnit")
     }
 }
