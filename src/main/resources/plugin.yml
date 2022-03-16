@@ -1,0 +1,13 @@
+name: Oconomy
+version: '${version}'
+main: org.oneserver.oconomy.Oconomy
+api-version: 1.17
+softdepend: [ Vault ]
+authors: [ M1n1don ]
+description: 経済の概念を追加するプラグイン
+
+commands:
+  money:
+    description: お金を管理するためのコマンド
+    aliases:
+      - balance
